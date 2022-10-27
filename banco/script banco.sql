@@ -59,10 +59,21 @@ describe usuarios;
   select*from usuarios;
   
    select*from usuarios where id = 7;
+   
   
   -- a linha abaixo seleciona campos específicos da tabela
 select usuario, login from usuarios;
- 
+
+ select*from usuarios where usuario = 'Luiz Chaves';
+select*from usuarios where id = 1;
+
+ -- CRUD Update (!Importante usar a cláusula where)********/
+
+update usuarios set usuario = 'Edson Bravo' where id = 2;
+
+-- CRUD Delete (!Importante usar a cláusula where associada ao ID)*********/
+delete from usuarios where id = 7;
+
  
  
  
